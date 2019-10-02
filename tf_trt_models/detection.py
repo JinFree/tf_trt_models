@@ -122,7 +122,7 @@ def build_detection_graph(config, checkpoint,
     if config.model.HasField('ssd'):
         config.model.ssd.feature_extractor.override_base_feature_extractor_hyperparams = True
         if score_threshold is not None:
-            config.model.ssd.post_processing.batch_non_max_suppression.score_threshold = score_threshold    
+            config.model.ssd.post_processing.score_threshold = score_threshold    
         if input_shape is not None:
             config.model.ssd.image_resizer.fixed_shape_resizer.height = input_shape[0]
             config.model.ssd.image_resizer.fixed_shape_resizer.width = input_shape[1]
