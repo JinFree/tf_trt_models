@@ -8,8 +8,6 @@ import numpy as np
 import time
 from tf_trt_models.detection import download_detection_model, build_detection_graph
 
-IMAGE_PATH = './COCO_val2014_000000581929.jpg'
-
 ## 아래 세 줄만 수정하면 실제 훈련한 모델에서도 활용 가능
 
 PATH_TO_FASTER_RCNN = '../faster_rcnn_resnet101_coco_2018_01_28/'
